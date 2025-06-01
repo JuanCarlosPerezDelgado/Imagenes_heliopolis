@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 </head>
+
 <body>
-    <div id="panorama" style="width: 100%; height: 700px;"></div>
+    <div id="panorama" style="width: 100%; height: 680px;"></div>
     <script>
         pannellum.viewer('panorama', {
             "default": {
@@ -18,138 +19,316 @@
                 "escena_1": {
                     "title": "Instalación",
                     "type": "equirectangular",
-                    "panorama": "imagen_360_2.jpeg",
+                    "panorama": "imagen_1_heliopolis.jpg",
+                    "pitch": -15,
+                    "hfov": 360,
                     "hotSpots": [
                         {
-                            "pitch": -2.1,
-                            "yaw": -23,    // Hotspot para volver a Escena 1
+                            "pitch": -5,
+                            "yaw": 17,    
                             "type": "scene",
-                            "text": "Ir a central transcrítica de CO2",
+                            "text": "",
                             "sceneId": "escena_2"
-                        },
-                        {
-                            "pitch": -0.6,
-                            "yaw": 37.1,   // Hotspot para ir a Escena 3
-                            "type": "scene",
-                            "text": "Ir a cámara frigorífica",
-                            "sceneId": "escena_3"
                         }
                     ]
                 },
                 "escena_2": {
-                    "title": "Central transcrítica de CO2",
+                    "title": "Instalación",
                     "type": "equirectangular",
-                    "panorama": "imagen_360.jpeg",
+                    "panorama": "imagen_2_heliopolis.jpg",
+                    "pitch": -15,
+                    "yaw": 5,
+                    "hfov": 360,
                     "hotSpots": [
                         {
-                            "pitch": -2.1,
-                            "yaw": 132.9,   // Posición del hotspot
+                            "pitch": -5,
+                            "yaw": 18,    
                             "type": "scene",
-                            "text": "Ir a instalación",
-                            "sceneId": "escena_1"
+                            "text": "",
+                            "sceneId": "escena_3"
                         },
                         {
-                            "pitch": 5,
-                            "yaw": 70,   // Posición del hotspot
+                            "pitch": -5,
+                            "yaw": 33,   
                             "type": "info",
-                            "text": "Cuadro eléctrico de control para los componentes de la central transcrítica de CO2",
+                            "text": "Unidad exterior del equipo comercial R-449A",
+                        }
+                    ]
+                },
+                "escena_3": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_3_heliopolis.jpg",
+                    "pitch": -15,
+                    "yaw": 5,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw": 45,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_4"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 3,   
+                            "type": "info",
+                            "text": "Unidad exterior del equipo comercial R-449A",
+                        }
+                    ]
+                },
+                "escena_4": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_4_heliopolis.jpg",
+                    "pitch": -10,
+                    "yaw": -25,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw": -45,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_5"
                         },
                         {
                             "pitch": 0,
-                            "yaw": 10,   // Posición del hotspot
+                            "yaw": -3,   
                             "type": "info",
-                            "text": "Cuadro eléctrico de control para los componentes de las unidades evaporadoras",
+                            "text": "Unidad evaporadora del equipo comercial R-449A",
                         },
                         {
-                            "pitch": -5,
-                            "yaw": -60,   // Posición del hotspot
+                            "pitch": 5,
+                            "yaw": -70,   
                             "type": "info",
-                            "text": "Gas-cooler (batería de intercambio y ventilador)",
+                            "text": "Equipo comercial waterloop R-290",
                         },
                         {
-                            "pitch": -35,
-                            "yaw": 20,   // Posición del hotspot
+                            "pitch": 25,
+                            "yaw": 25,   
                             "type": "info",
-                            "text": "Central transcrítica de CO2",
-                        },
-                        {
-                            "pitch": -60,
-                            "yaw": 15,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Flash-tank",
-                        },
-                        {
-                            "pitch": -50,
-                            "yaw": -8,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Compresor",
-                        },
-                        {
-                            "pitch": -35,
-                            "yaw": -20,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Variador de frecuencia",
-                        },
-                        {
-                            "pitch": -70,
-                            "yaw": -28,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Caudalímetro",
-                        },
-                        {
-                            "pitch": -58,
-                            "yaw": 40,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Presostato de alta y baja presión",
-                        },
-                        {
-                            "pitch": -65,
-                            "yaw": 45,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Válvula de alta presión",
-                        },
-                        {
-                            "pitch": -75,
-                            "yaw": 15,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Filtro de humedad y antipartículas",
-                        },
-                        {
-                            "pitch": -45,
-                            "yaw": 2,   // Posición del hotspot
-                            "type": "info",
-                            "text": "Válvula by-pass",
+                            "text": "Unidad evaporadora del equipo CO2 transcrítico",
                         }
-
                     ]
                 },
-
-                "escena_3": {
-                    "title": "Cámara frigorífica",
+                "escena_5": {
+                    "title": "Instalación",
                     "type": "equirectangular",
-                    "panorama": "imagen_360_3.jpeg",
+                    "panorama": "imagen_5_heliopolis.jpg",
+                    "pitch": -10,
+                    "yaw": -25,
+                    "hfov": 360,
                     "hotSpots": [
                         {
                             "pitch": -5,
-                            "yaw": -170,    // Hotspot para volver a Escena 2
+                            "yaw": 5,    
                             "type": "scene",
-                            "text": "Ir a instalación",
-                            "sceneId": "escena_1"
+                            "text": "",
+                            "sceneId": "escena_6"
+                        }
+                    ]
+                },
+                "escena_6": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_6_heliopolis.jpg",
+                    "pitch": -20,
+                    "yaw": 25,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-30,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_7"
+                        },
+                        {
+                            "pitch": -35,
+                            "yaw": 12,   
+                            "type": "info",
+                            "text": "Unidad exterior del equipo CO2 transcrítico",
+                        },
+                        {
+                            "pitch": -10,
+                            "yaw": 56,   
+                            "type": "info",
+                            "text": "Equipos de monitorización kiconex",
+                        }
+                    ]
+                },
+                "escena_7": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_7_heliopolis.jpg",
+                    "pitch": -20,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":25,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_8"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -15,   
+                            "type": "info",
+                            "text": "Unidad exterior del equipo comercial R-290",
+                        }
+                    ]
+                },
+                "escena_8": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_9_heliopolis.jpg",
+                    "pitch": -15,
+                    "yaw":-10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-20,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_9"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 18,   
+                            "type": "info",
+                            "text": "Unidad evaporadora del equipo comercial R-290",
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 28,   
+                            "type": "info",
+                            "text": "Unidad evaporadora del prototipo 2 R-290",
+                        },
+                        {
+                            "pitch": 15,
+                            "yaw": 0,   
+                            "type": "info",
+                            "text": "Unidad interior del equipo comercial bodega R-290",
                         },
                         {
                             "pitch": 10,
-                            "yaw": -5,   // Posición del hotspot
+                            "yaw":-50,   
                             "type": "info",
-                            "text": "Unidades evaporadoras (válvulas de expansión, baterías de intercambio y ventiladores)",
+                            "text": "Unidad evaporadora del equipo CO2 transcrítico",
                         }
-
-
-
+                    ]
+                },
+                "escena_9": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_8_heliopolis.jpg",
+                    "pitch": -5,
+                    "yaw":-40,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-90,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -5,   
+                            "type": "info",
+                            "text": "Unidad exterior del equipo comercial R-290",
+                        }
+                    ]
+                },
+                "escena_10": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_10_heliopolis.jpg",
+                    "pitch": -10,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-47,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_11"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw":30,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_12"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw":130,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_1"
+                        }
+                    ]
+                },                                 
+                "escena_11": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_11_heliopolis.jpg",
+                    "pitch": -15,
+                    "yaw":-5,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-40,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -8,   
+                            "type": "info",
+                            "text": "Prototipo 1 R-290",
+                        }
+                    ]
+                },
+                "escena_12": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_12_heliopolis.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
                     ]
                 }
-            }
+        
+        }
         });
     </script>
-    
+
 </body>
 </html>
+
+
