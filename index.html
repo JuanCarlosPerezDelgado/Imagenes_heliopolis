@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+</head>
+<body>
+    <div id="panorama" style="width: 100%; height: 700px;"></div>
+    <script>
+        pannellum.viewer('panorama', {
+            "default": {
+                "firstScene": "escena_1",
+                "sceneFadeDuration": 1000
+            },
+            "scenes": {
+                "escena_1": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "imagen_360_2.jpeg",
+                    "hotSpots": [
+                        {
+                            "pitch": -2.1,
+                            "yaw": -23,    // Hotspot para volver a Escena 1
+                            "type": "scene",
+                            "text": "Ir a central transcrítica de CO2",
+                            "sceneId": "escena_2"
+                        },
+                        {
+                            "pitch": -0.6,
+                            "yaw": 37.1,   // Hotspot para ir a Escena 3
+                            "type": "scene",
+                            "text": "Ir a cámara frigorífica",
+                            "sceneId": "escena_3"
+                        }
+                    ]
+                },
+                "escena_2": {
+                    "title": "Central transcrítica de CO2",
+                    "type": "equirectangular",
+                    "panorama": "imagen_360.jpeg",
+                    "hotSpots": [
+                        {
+                            "pitch": -2.1,
+                            "yaw": 132.9,   // Posición del hotspot
+                            "type": "scene",
+                            "text": "Ir a instalación",
+                            "sceneId": "escena_1"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 70,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Cuadro eléctrico de control para los componentes de la central transcrítica de CO2",
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": 10,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Cuadro eléctrico de control para los componentes de las unidades evaporadoras",
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -60,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Gas-cooler (batería de intercambio y ventilador)",
+                        },
+                        {
+                            "pitch": -35,
+                            "yaw": 20,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Central transcrítica de CO2",
+                        },
+                        {
+                            "pitch": -60,
+                            "yaw": 15,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Flash-tank",
+                        },
+                        {
+                            "pitch": -50,
+                            "yaw": -8,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Compresor",
+                        },
+                        {
+                            "pitch": -35,
+                            "yaw": -20,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Variador de frecuencia",
+                        },
+                        {
+                            "pitch": -70,
+                            "yaw": -28,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Caudalímetro",
+                        },
+                        {
+                            "pitch": -58,
+                            "yaw": 40,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Presostato de alta y baja presión",
+                        },
+                        {
+                            "pitch": -65,
+                            "yaw": 45,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Válvula de alta presión",
+                        },
+                        {
+                            "pitch": -75,
+                            "yaw": 15,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Filtro de humedad y antipartículas",
+                        },
+                        {
+                            "pitch": -45,
+                            "yaw": 2,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Válvula by-pass",
+                        }
+
+                    ]
+                },
+
+                "escena_3": {
+                    "title": "Cámara frigorífica",
+                    "type": "equirectangular",
+                    "panorama": "imagen_360_3.jpeg",
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw": -170,    // Hotspot para volver a Escena 2
+                            "type": "scene",
+                            "text": "Ir a instalación",
+                            "sceneId": "escena_1"
+                        },
+                        {
+                            "pitch": 10,
+                            "yaw": -5,   // Posición del hotspot
+                            "type": "info",
+                            "text": "Unidades evaporadoras (válvulas de expansión, baterías de intercambio y ventiladores)",
+                        }
+
+
+
+                    ]
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>
